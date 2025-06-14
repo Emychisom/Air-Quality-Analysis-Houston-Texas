@@ -1,21 +1,100 @@
-Air Quality Analysis Report: PM2.5 in Houston (2023) By Chisom Mbah
+# 🌆 Air Quality Analysis: PM2.5 in Houston (2023)
 
-Project Overview This project analyzes daily PM2.5 air pollution levels in Houston, Texas, during the year 2023. PM2.5 (particulate matter smaller than 2.5 micrometers) is an important indicator of air quality, impacting human health and the environment.
+**By Chisom Mbah**
 
-Data Source The data was sourced from the EPA AirData portal, containing daily PM2.5 measurements recorded at monitoring stations across Houston throughout 2023.
+This project presents an exploratory data analysis of **daily PM2.5 air pollution levels** in **Houston, Texas**, for the year **2023**. PM2.5 refers to fine particulate matter smaller than 2.5 micrometers in diameter — a key indicator of air quality with significant health and environmental impacts.
 
-Data Preparation Loaded the dataset and converted date columns to datetime format.
 
-Cleaned missing values by removing records without PM2.5 data.
+## 📌 Project Overview
 
-Added additional columns for month and day of the week to explore temporal patterns.
+The analysis aims to:
 
-Exploratory Data Analysis Daily Trends: Visualized daily PM2.5 levels across the year, showing fluctuations and spikes.
-Monthly Averages: Identified which months had the highest and lowest average PM2.5 concentrations.
+- Track daily, monthly, and weekly trends in PM2.5 concentrations  
+- Identify pollution peaks and periods of concern  
+- Provide insights to support public health awareness and policy planning  
 
-Weekly Patterns: Compared average PM2.5 levels by day of the week to see if weekdays differ from weekends.
 
-Results / Findings “The average monthly PM2.5 concentrations in Houston during 2023 varied throughout the year. The highest average levels were observed in July (20.7 µg/m³), indicating a period of increased air pollution. The lowest averages occurred in February (10.8 µg/m³). Daily PM2.5 data revealed several spikes, with the most significant peak occurring around mid-July. This suggests that air quality tends to worsen during the summer months.”
-Discussion “The elevated PM2.5 levels in July could be attributed to higher temperatures that increase the formation of secondary pollutants and possibly increased industrial activity or wildfires in the region. Such elevated particulate matter poses health risks, particularly to children, the elderly, and individuals with respiratory conditions. Understanding these patterns can guide local authorities in implementing timely air quality advisories and pollution control measures.”.
+## 📊 Data Source
 
-Conclusion: “In summary, Houston experienced higher PM2.5 pollution in summer 2023, highlighting seasonal air quality challenges. Continued monitoring and mitigation efforts are essential to protect public health.”
+- **Source**: [EPA AirData Portal](https://www.epa.gov/outdoor-air-quality-data)  
+- **Content**: Daily PM2.5 measurements from monitoring stations in Houston throughout 2023  
+- **Format**: CSV with date and PM2.5 concentration columns
+
+
+## 🧹 Data Preparation
+
+- Loaded the dataset and converted date columns to proper `datetime` format  
+- Removed records with missing PM2.5 values  
+- Created new features:
+  - **Month**
+  - **Day of the week**  
+  These features allowed for temporal pattern exploration.
+
+
+## 📈 Exploratory Data Analysis
+
+### 🔹 Daily Trends
+Visualized daily PM2.5 levels across the year, revealing noticeable fluctuations and distinct spikes.
+
+### 🔹 Monthly Averages
+Identified average PM2.5 concentrations for each month:
+- **Highest** in **July**: *20.7 µg/m³*
+- **Lowest** in **February**: *10.8 µg/m³*
+![Monthly PM2.5 Trend](plots/monthly_pm25_trend.png)
+
+### 🔹 Weekly Patterns
+Compared pollution levels across days of the week to check for weekday–weekend differences.
+![Weekly PM2.5](plots/weekly_pm25.png
+
+
+## 📌 Key Findings
+
+> “The average monthly PM2.5 concentrations in Houston during 2023 varied throughout the year.  
+> The **highest average levels** occurred in **July (20.7 µg/m³)**, suggesting a **summer pollution peak**, while the **lowest levels** were seen in **February (10.8 µg/m³)**.”
+
+- **Mid-July** featured the **sharpest spike** in PM2.5, indicating possible acute air quality events.
+- **Summer months** generally exhibited worse air quality.
+
+
+## 🧠 Discussion
+
+The elevated PM2.5 levels in July may be due to:
+- Higher temperatures driving **secondary pollutant formation**
+- Possible **industrial activity** or **wildfires** in the region
+
+> These levels pose **health risks**, especially for vulnerable populations (children, elderly, and individuals with respiratory issues).  
+> **Awareness and timely advisories** are critical to minimizing exposure.
+
+
+## ✅ Conclusion
+
+Houston experienced elevated PM2.5 concentrations during **summer 2023**, particularly in **July**. These seasonal air quality patterns highlight the importance of:
+
+- Ongoing monitoring  
+- Proactive public health communication  
+- Mitigation strategies to reduce exposure
+
+
+## 📁 Files
+
+- `AirQualittyAnalysis.ipynb`: Main notebook with the complete analysis
+- `data/`: Contains the PM2.5 dataset
+- `README.md`: This project summary and documentation
+
+
+## 🛠️ Tools Used
+
+- Python  
+- Pandas, NumPy  
+- Matplotlib, Seaborn  
+- Jupyter Notebook
+
+## 👤 Author
+
+**Chisom Mbah**  
+GitHub: [@Emychisom](https://github.com/Emychisom)
+
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
