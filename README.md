@@ -44,7 +44,7 @@ Identified average PM2.5 concentrations for each month:
 
 ### 🔹 Weekly Patterns
 Compared pollution levels across days of the week to check for weekday–weekend differences.
-![Weekly PM2.5](plots/weekly_pm25.png
+![Weekly PM2.5](plots/weekly_pm25_trend.png)
 
 
 ## 📌 Key Findings
